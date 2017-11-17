@@ -13,13 +13,6 @@ Type "copyright", "credits" or "license()" for more information.
 >>> from sklearn.ensemble import GradientBoostingRegressor
 >>> clf = GradientBoostingRegressor(n_estimators=100, max_depth=4, learning_rate=0.1, loss="huber")
 >>> clf.fit(X_train, Y_train)
-GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
-             learning_rate=0.1, loss='huber', max_depth=4,
-             max_features=None, max_leaf_nodes=None,
-             min_impurity_split=1e-07, min_samples_leaf=1,
-             min_samples_split=2, min_weight_fraction_leaf=0.0,
-             n_estimators=100, presort='auto', random_state=None,
-             subsample=1.0, verbose=0, warm_start=False)
 >>> Y_test = Y[70:100]
 >>> X_test = X[70:100]
 >>> fig = plt.figure()
