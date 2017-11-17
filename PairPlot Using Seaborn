@@ -1,0 +1,10 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+names = ["ICS", "Sigma", "RFL"]
+data = pd.read_csv("IndiaConf2018.csv", names=names)
+print(data.head())
+#g = sns.pairplot(data)# plots histogram on diagnols
+#g = sns.pairplot(data, diag_kind = "kde")# plots kde on diagnols
+g = sns.pairplot(data, diag_kind = "kde", kind = "reg", markers = "+", diag_kws = dict(shade=True))# plots kde on diagnols along with linear regression lines.
