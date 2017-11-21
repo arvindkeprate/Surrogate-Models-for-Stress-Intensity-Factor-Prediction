@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 16 15:58:45 2017
-
-@author: 2913752
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.svm import SVR
@@ -27,4 +20,3 @@ writer = pd.ExcelWriter("SVRIndia.xlsx", engine = "xlsxwriter")
 df_rbf.to_excel(writer, sheet_name="Sheet1")
 writer.save()
 #print("MSE: %.2f" %np.mean((y_rbf-Y_validation)**2))
-print(X_train)
